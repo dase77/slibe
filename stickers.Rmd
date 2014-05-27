@@ -1,0 +1,43 @@
+---
+output:
+  html_document:
+    toc: yes
+---
+```{r,echo = FALSE,message=F}
+
+library(foreign)
+library(psychometric)
+library(psych,psy)
+library(ggplot2)
+library(gplots)
+library(Hmisc)
+library(xtable) 
+#library(Epi)
+library(psych)
+#library(rela)
+#library(RSvgDevice)
+library(reshape)
+library(RCurl)
+library(scales)
+#library(wordcloud)
+library(XML)
+library(plotrix)
+library(corrplot)
+library(dplyr)
+xT=function(x){print(type="html",xtable(x),include.rownames=F)}
+xTT=function(x){print(type="html",xtable(x),include.rownames=T)}
+
+pN=function(x){prettyNum(x, big.mark = " ", decimal.mark = ",")}
+options(scipen=999)
+```
+
+# Stickers
+
+This is a tets
+```{r,echo=F, comment = "",results='asis',warning=FALSE,message=FALSE}
+xT(mtcars)
+ggplot(mtcars,aes(carb,hp))+geom_smooth()
+```
+
+
+
